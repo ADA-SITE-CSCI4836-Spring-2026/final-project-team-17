@@ -12,20 +12,21 @@ public class GameManager : MonoBehaviour
     private bool enemyStarted = false;
     private bool gameEnded = false;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+private void Awake()
+{
+    Instance = this;
+    Time.timeScale = 1f;
+}
 
-    void Start()
-    {
-        Time.timeScale = 1f;
+void Start()
+{
+    Time.timeScale = 1f;
 
-        if (enemy != null)
-            enemy.SetActive(false);
+    if (enemy != null)
+        enemy.SetActive(false);
 
-        UpdateTimerUI();
-    }
+    UpdateTimerUI();
+}
 
     void Update()
     {

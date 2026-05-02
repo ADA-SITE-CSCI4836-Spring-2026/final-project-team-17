@@ -302,7 +302,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -14
   m_TargetDisplay: 0
 --- !u!1 &275692320
 GameObject:
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9523df56c9f4a9683f7623e375a058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 20
+  timeLeft: 60
   timerText: {fileID: 17627946}
   enemy: {fileID: 0}
 --- !u!4 &402383748
@@ -720,7 +720,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10650, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1054,7 +1054,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1727414452}
-  audioSource: {fileID: 1624558872}
   coinSound: {fileID: 8300000, guid: f1b2bdc7b5cac44c1bfcd21c109a507b, type: 3}
 --- !u!1 &1708570281
 GameObject:
