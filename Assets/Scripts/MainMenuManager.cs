@@ -20,4 +20,15 @@ public class MainMenuManager : MonoBehaviour
     {
         instructionsPanel.SetActive(false);
     }
+
+	public void QuitGame()
+	{
+		Debug.Log("Quit Game");
+
+#if UNITY_EDITOR
+    UnityEditor.EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
+	}
 }

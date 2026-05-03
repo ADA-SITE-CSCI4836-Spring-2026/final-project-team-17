@@ -22,7 +22,9 @@ public class PlayerCoinCollector : MonoBehaviour
             score++;
             UpdateScoreUI();
 
-            audioSource.PlayOneShot(coinSound);
+			GameManager.Instance.timeLeft += 3f;
+
+			audioSource.PlayOneShot(coinSound);
 
             Destroy(other.gameObject);
         }

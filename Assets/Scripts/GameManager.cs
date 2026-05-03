@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -67,4 +68,10 @@ void Start()
         timerText.text = "GAME OVER!";
         Time.timeScale = 0f;
     }
+
+	public void GoToMainMenu()
+	{
+		Time.timeScale = 1f;
+		SceneManager.LoadScene("Main");
+	}
 }
